@@ -2,36 +2,15 @@ import processing.core.PApplet;
 
 public class Sketch extends PApplet {
 	
-	
-  /**
-   * Called once at the beginning of execution, put your size all in this method
-   */
   public void settings() {
-	// put your size call here
     size(1200, 600);
   }
-
-  /** 
-   * Called once at the beginning of execution.  Add initial set up
-   * values here i.e background, stroke, fill etc.
-   */
+	
   public void setup() {
     background(45, 150, 207);
   }
 
-  /**
-   * Called repeatedly, anything drawn to the screen goes here
-   */
   public void draw() {
-	  
-	// sample code, delete this stuff
-    /*
-    stroke(128);
-    line(150, 25, 270, 350);  
-
-    stroke(255);
-    line(50, 125, 70, 50);  
-*/
     draw_section_outlines();
     draw_section1();
     draw_section2();
@@ -42,14 +21,8 @@ public class Sketch extends PApplet {
     draw_section6();
     draw_section7();
     draw_section8();
-
-    
   }
 
-
-  /**
-   * Draw the outlines for all sections
-   */
   public void draw_section_outlines(){
     stroke(0);
     noFill();
@@ -60,7 +33,7 @@ public class Sketch extends PApplet {
     rect(600, 300, 300, 300);
     rect(900, 300, 300, 300);
 
-    // draw top row boxes
+		// draw top row boxes
     rect(0, 0, 300, 300);
     rect(300, 0, 300, 300);
     rect(600, 0, 300, 300);
