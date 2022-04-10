@@ -33,7 +33,7 @@ public class Sketch extends PApplet {
     rect(600, 300, 300, 300);
     rect(900, 300, 300, 300);
 
-		// draw top row boxes
+    // draw top row boxes
     rect(0, 0, 300, 300);
     rect(300, 0, 300, 300);
     rect(600, 0, 300, 300);
